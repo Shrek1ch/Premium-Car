@@ -1,16 +1,21 @@
 .car-img{
-    width: auto;
-    height: 1000px;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(255, 255, 255);
     background-image: url("https://avatars.mds.yandex.net/i?id=fe7efea5630079e6cda5a0976c5ce96b_l-5042042-images-thumbs&n=13");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 h1{
     text-align: center;
 }
 
-.car1-img{
-    
+.footer{
+    background-color: gray;
+}
+
+.text1{
+    font-size: 100px;
+    margin-top: 150px;
 }
