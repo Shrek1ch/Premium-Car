@@ -7,7 +7,7 @@
     <title>Vyacheslav Motors🚗</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+    <link href="static/style.css" rel="stylesheet">
     <link rel="icon"
         href="https://banner2.cleanpng.com/20180417/dxw/kisspng-tesla-model-x-tesla-model-3-car-tesla-model-s-tesla-5ad699f81f33f6.8870484415240135601278.jpg">
 </head>
@@ -105,12 +105,12 @@
 
     <div class="d-flex justify-content-center flex-wrap col-lg-6 mx-auto">
 
-
+        {% for car in car %}
         <div class="card car1" style="width: 18rem;">
             <img src="https://motor.ru/imgs/2023/06/18/06/5944229/29b99e0fbc2318d5545c591ae3fcba43280938f5.jpg"
                 class="card-img-top" alt="Rolls-Royce Phatom">
             <div class="card-body">
-                <h1 class="card-title">Rolls-Royce Phantom</h1>
+                <h1 class="card-title">{{car[1]}}</h1>
                 <h3>97 500 000₽</h3>
                 <br>Характеристики:
                 <br>Год выпуска: 2025
@@ -123,15 +123,15 @@
                 <a href="#" class="btn btn-primary">Подать заявку</a>
             </div>
         </div>
+        {% endfor %}
 
-
-
+        
         <div class="card" style="width: 18rem;">
             <img src="https://gateauto.ru/upload/resize_cache/iblock/639/1920_1080_1/3lt07veo7d05p6ntx9r3gia7zhl6m3gf.webp"
                 class="card-img-top" alt="Mercedes-Benz G63 AMG">
             <div class="card-body">
                 <h1 class="card-title">Mercedes-Benz G63 AMG</h1>
-                <h3>38.600.000₽</h3>
+                <h3>38 600 000₽</h3>
                 <br>Характеристики:
                 <br>Год выпуска: 2024
                 <br>Поколение: IV (2018—2024)
@@ -143,7 +143,7 @@
                 <a href="#" class="btn btn-primary">Подать заявку</a>
             </div>
         </div>
-
+        
 
         <div class="card" style="width: 18rem;">
             <img src="https://a.d-cd.net/qoAAAgF3_OA-1920.jpg" class="card-img-top" alt="Volkswagen Touareg R-Line">
@@ -160,35 +160,17 @@
                 <br>Коробка передач: Автомат
                 <a href="#" class="btn btn-primary">Подать заявку</a>
             </div>
-        </div>
+        </div> -->
 
-
-<<<<<<< HEAD
     </div>
 
-    <div class="d-flex justify-content-center flex-wrap col-lg-6 mx-auto">
-    <div class="card" style="width: 18rem;">
-        <img src="https://i.pinimg.com/736x/7d/f3/51/7df351deedfc512f9c603931343d157d.jpg" class="card-img-top"
-            alt="Lamborghini Huracan 5.2 AMT, 2023">
-        <div class="card-body">
-            <h1 class="card-title">Lamborghini Huracan</h1>
-            <h3>16 145 000₽</h3>
-            <br>Характеристики:
-            <br>Год выпуска: 2023
-            <br>Поколение: I (2019—2025)
-            <br>Состояние: Не битый
-            <br>Модификация: 5.2 AMT (640 л.с.) Performante
-            <br>Объём двигателя: 5.2 л
-            <br>Тип двигателя: Дизель
-            <br>Коробка передач: Робот
-            <a href="#" class="btn btn-primary">Подать заявку</a>
-=======
+    <!-- <div class="d-flex justify-content-center flex-wrap col-lg-6 mx-auto">
         <div class="card" style="width: 18rem;">
             <img src="https://i.pinimg.com/736x/7d/f3/51/7df351deedfc512f9c603931343d157d.jpg" class="card-img-top"
                 alt="Lamborghini Huracan 5.2 AMT, 2023">
             <div class="card-body">
                 <h1 class="card-title">Lamborghini Huracan</h1>
-                <h3>16 145 000₽</h3>
+                <h3>25 000 000₽</h3>
                 <br>Характеристики:
                 <br>Год выпуска: 2023
                 <br>Поколение: I (2019—2025)
@@ -199,36 +181,15 @@
                 <br>Коробка передач: Робот
                 <a href="#" class="btn btn-primary">Подать заявку</a>
             </div>
->>>>>>> 1a2d9364d203a3cd418809c6b8aecf3c815cb719
         </div>
-    </div>
+    
 
 
 
 
 
 
-<<<<<<< HEAD
-
-
-
-    <div class="card" style="width: 18rem;">
-        <img src="https://i.pinimg.com/originals/b3/e8/05/b3e805ed3c2f9c5024d1755a4355c361.jpg" class="card-img-top"
-            alt="Porsche 911 Turbo S">
-        <div class="card-body">
-            <h1 class="card-title">Porsche 911 Turbo S</h1>
-            <h3>37 000 000₽</h3>
-            <br>Характеристики:
-            <br>Год выпуска: 2024
-            <br>Поколение: IV (2018—2025)
-            <br>Состояние: Не битый
-            <br>Модификация: 3.7 4WD PDK (650 л.с.) Turbo S
-            <br>Объём двигателя: 3.7 л
-            <br>Тип двигателя: Бензин
-            <br>Коробка передач: Робот
-            <a href="#" class="btn btn-primary">Подать заявку</a>
-=======
-    <div class="d-flex justify-content-center flex-wrap col-lg-6 mx-auto">
+    
 
         <div class="card" style="width: 18rem;">
             <img src="https://i.pinimg.com/originals/b3/e8/05/b3e805ed3c2f9c5024d1755a4355c361.jpg" class="card-img-top"
@@ -246,7 +207,6 @@
                 <br>Коробка передач: Робот
                 <a href="#" class="btn btn-primary">Подать заявку</a>
             </div>
->>>>>>> 1a2d9364d203a3cd418809c6b8aecf3c815cb719
         </div>
 
 
@@ -268,37 +228,7 @@
             </div>
         </div>
 
-
-
-
-
-
-    </div>
-<<<<<<< HEAD
-
-
-    <div class="card" style="width: 18rem;">
-        <img src="1200x900.png" class="card-img-top" alt="Bugatti Chiron">
-        <div class="card-body">
-            <h1 class="card-title">Bugatti Chiron</h1>
-            <h3>390 000 000₽</h3>
-            <br>Характеристики:
-            <br>Год выпуска: 2021
-            <br>Поколение: I (2016—2025)
-            <br>Состояние: Не битый
-            <br>Модификация: 8.0 AMT (1500 л.с.)
-            <br>Объём двигателя: 8 л
-            <br>Тип двигателя: Бензин
-            <br>Коробка передач: Робот
-            <a href="#" class="btn btn-primary">Подать заявку</a>
-        </div>
-    </div>
-
-
-</div>
-
-=======
->>>>>>> 1a2d9364d203a3cd418809c6b8aecf3c815cb719
+    </div> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
